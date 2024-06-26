@@ -14,6 +14,10 @@ server.listen({
 		if (request.url.includes('.sentry.io')) {
 			return
 		}
+		// this is the port of the inngest dev server
+		if (new URL(request.url).port === '8288') {
+			return
+		}
 
 		// Print the regular MSW unhandled request warning otherwise.
 		print.warning()

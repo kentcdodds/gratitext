@@ -1,7 +1,7 @@
 import { type MetaFunction } from '@remix-run/node'
 import { Link } from '@remix-run/react'
-import { Button } from '#app/components/ui/button.js'
-import { useOptionalUser } from '#app/utils/user.js'
+import { Button } from '#app/components/ui/button.tsx'
+import { useOptionalUser } from '#app/utils/user.ts'
 
 export const meta: MetaFunction = () => [{ title: 'GratiText' }]
 
